@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UUM Transit - Schedule</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/schedule.css" />
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <header class="header">
+        <div class="container">
+          <div class="brand">
+            <span class="brand-icon">🚌</span>
+            <h1 class="brand-name">UUM Transit</h1>
+          </div>
+          <nav class="nav">
+            <a href="/" class="nav-link">Dashboard</a>
+            <a href="/routes.html" class="nav-link">Routes</a>
+            <a href="/schedule.html" class="nav-link active">Schedule</a>
+            <a href="/driver.html" class="nav-link">Driver</a>
+            <a href="/admin.html" class="nav-link">Admin</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container section">
+        <div class="schedule-header">
+          <h1 class="page-title">Bus Schedule</h1>
+          <div class="schedule-controls">
+            <div class="day-selector">
+              <button class="day-btn active">Today</button>
+              <button class="day-btn">Tomorrow</button>
+              <button class="day-btn">This Week</button>
+            </div>
+            <div class="time-filter">
+              <select class="time-select">
+                <option>All Times</option>
+                <option>Morning (6AM - 12PM)</option>
+                <option>Afternoon (12PM - 6PM)</option>
+                <option>Evening (6PM - 10PM)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-grid">
+          <!-- Main Campus Loop Schedule -->
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <h3>Main Campus Loop</h3>
+              <span class="schedule-badge operational"
+                >Currently Operating</span
+              >
+            </div>
+
+            <div class="schedule-times">
+              <div class="time-slot">
+                <div class="time-header">Morning</div>
+                <div class="time-list">
+                  <span class="time-chip">6:00 AM</span>
+                  <span class="time-chip">6:15 AM</span>
+                  <span class="time-chip">6:30 AM</span>
+                  <span class="time-chip">6:45 AM</span>
+                  <span class="time-chip">7:00 AM</span>
+                </div>
+              </div>
+
+              <div class="time-slot">
+                <div class="time-header">Afternoon</div>
+                <div class="time-list">
+                  <span class="time-chip">12:00 PM</span>
+                  <span class="time-chip">12:15 PM</span>
+                  <span class="time-chip">12:30 PM</span>
+                  <span class="time-chip">12:45 PM</span>
+                  <span class="time-chip">1:00 PM</span>
+                </div>
+              </div>
+
+              <div class="time-slot">
+                <div class="time-header">Evening</div>
+                <div class="time-list">
+                  <span class="time-chip">6:00 PM</span>
+                  <span class="time-chip">6:15 PM</span>
+                  <span class="time-chip">6:30 PM</span>
+                  <span class="time-chip">6:45 PM</span>
+                  <span class="time-chip">7:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Residential Route Schedule -->
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <h3>Residential College Route</h3>
+              <span class="schedule-badge operational"
+                >Currently Operating</span
+              >
+            </div>
+
+            <div class="schedule-times">
+              <div class="time-slot">
+                <div class="time-header">Morning</div>
+                <div class="time-list">
+                  <span class="time-chip">7:00 AM</span>
+                  <span class="time-chip">7:20 AM</span>
+                  <span class="time-chip">7:40 AM</span>
+                  <span class="time-chip">8:00 AM</span>
+                  <span class="time-chip">8:20 AM</span>
+                </div>
+              </div>
+
+              <div class="time-slot">
+                <div class="time-header">Afternoon</div>
+                <div class="time-list">
+                  <span class="time-chip">1:00 PM</span>
+                  <span class="time-chip">1:20 PM</span>
+                  <span class="time-chip">1:40 PM</span>
+                  <span class="time-chip">2:00 PM</span>
+                  <span class="time-chip">2:20 PM</span>
+                </div>
+              </div>
+
+              <div class="time-slot">
+                <div class="time-header">Evening</div>
+                <div class="time-list">
+                  <span class="time-chip">7:00 PM</span>
+                  <span class="time-chip">7:20 PM</span>
+                  <span class="time-chip">7:40 PM</span>
+                  <span class="time-chip">8:00 PM</span>
+                  <span class="time-chip">8:20 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

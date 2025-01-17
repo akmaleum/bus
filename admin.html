@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UUM Transit - Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="min-h-screen">
+      <header class="header">
+        <div class="container">
+          <div class="brand">
+            <span class="brand-icon">🚌</span>
+            <h1 class="brand-name">UUM Transit</h1>
+          </div>
+          <nav class="nav">
+            <a href="/index.html" class="nav-link">Dashboard</a>
+            <a href="/routes.html" class="nav-link">Routes</a>
+            <a href="/schedule.html" class="nav-link">Schedule</a>
+            <a href="/driver.html" class="nav-link">Driver</a>
+            <a href="/admin.html" class="nav-link active">Admin</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="container">
+          <section class="bus-management">
+            <div class="section-header">
+              <h2>Bus Management</h2>
+              <button class="action-btn">
+                <span class="icon">➕</span>
+                Add New Bus
+              </button>
+            </div>
+
+            <div class="bus-grid">
+              <div class="bus-card">
+                <div class="bus-header">
+                  <div class="bus-status active"></div>
+                  <h3>Bus 1</h3>
+                  <span class="status-badge success">Active</span>
+                </div>
+                <div class="bus-details">
+                  <p><span class="label">Driver:</span> Nilam Azril</p>
+                  <p><span class="label">Route:</span> Main Campus Loop</p>
+                  <p><span class="label">Last Maintenance:</span> 2024-03-15</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn-secondary">
+                    <span class="icon">📝</span>
+                    Edit
+                  </button>
+                  <button class="btn-secondary">
+                    <span class="icon">🔄</span>
+                    Status
+                  </button>
+                </div>
+              </div>
+
+              <div class="bus-card">
+                <div class="bus-header">
+                  <div class="bus-status inactive"></div>
+                  <h3>Bus 2</h3>
+                  <span class="status-badge warning">Maintenance</span>
+                </div>
+                <div class="bus-details">
+                  <p><span class="label">Driver:</span> Ahmad Razali</p>
+                  <p><span class="label">Route:</span> Residential Route</p>
+                  <p><span class="label">Last Maintenance:</span> 2024-03-20</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn-secondary">
+                    <span class="icon">📝</span>
+                    Edit
+                  </button>
+                  <button class="btn-secondary">
+                    <span class="icon">🔄</span>
+                    Status
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="route-management">
+            <div class="section-header">
+              <h2>Route Management</h2>
+              <button class="action-btn">
+                <span class="icon">➕</span>
+                Add New Route
+              </button>
+            </div>
+
+            <div class="routes-grid">
+              <div class="route-card">
+                <div class="route-header">
+                  <h3>Main Campus Loop</h3>
+                  <span class="route-status active">Active</span>
+                </div>
+                <div class="route-meta">
+                  <span class="route-info">
+                    <span class="info-icon">⏱️</span>
+                    15 min frequency
+                  </span>
+                  <span class="route-info">
+                    <span class="info-icon">🚌</span>
+                    2 buses assigned
+                  </span>
+                </div>
+                <div class="stops-list">
+                  <div class="stop-item">
+                    <span class="stop-dot"></span>
+                    <span>DKG 1</span>
+                  </div>
+                  <div class="stop-item">
+                    <span class="stop-dot"></span>
+                    <span>DKG 5</span>
+                  </div>
+                  <div class="stop-item">
+                    <span class="stop-dot"></span>
+                    <span>Library</span>
+                  </div>
+                </div>
+                <div class="card-actions">
+                  <button class="btn-secondary">
+                    <span class="icon">📝</span>
+                    Edit Route
+                  </button>
+                  <button class="btn-secondary">
+                    <span class="icon">🛑</span>
+                    Stop Service
+                  </button>
+                </div>
+              </div>
+
+              <div class="route-card">
+                <div class="route-header">
+                  <h3>Residential College Route</h3>
+                  <span class="route-status active">Active</span>
+                </div>
+                <div class="route-meta">
+                  <span class="route-info">
+                    <span class="info-icon">⏱️</span>
+                    20 min frequency
+                  </span>
+                  <span class="route-info">
+                    <span class="info-icon">🚌</span>
+                    1 bus assigned
+                  </span>
+                </div>
+                <div class="stops-list">
+                  <div class="stop-item">
+                    <span class="stop-dot"></span>
+                    <span>MAS Hall</span>
+                  </div>
+                  <div class="stop-item">
+                    <span class="stop-dot"></span>
+                    <span>TNB Hall</span>
+                  </div>
+                  <div class="stop-item">
+                    <span class="stop-dot"></span>
+                    <span>Sports Centre</span>
+                  </div>
+                </div>
+                <div class="card-actions">
+                  <button class="btn-secondary">
+                    <span class="icon">📝</span>
+                    Edit Route
+                  </button>
+                  <button class="btn-secondary">
+                    <span class="icon">🛑</span>
+                    Stop Service
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="system-stats">
+            <div class="section-header">
+              <h2>System Statistics</h2>
+              <div class="date-filter">
+                <button class="filter-btn active">Today</button>
+                <button class="filter-btn">This Week</button>
+                <button class="filter-btn">This Month</button>
+              </div>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3>Total Trips</h3>
+                  <span class="stat-icon">🚍</span>
+                </div>
+                <p class="stat-value">156</p>
+                <p class="stat-change positive">↑ 12% from last week</p>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3>Active Buses</h3>
+                  <span class="stat-icon">✅</span>
+                </div>
+                <p class="stat-value">3/4</p>
+                <p class="stat-change">75% fleet utilization</p>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3>Average Wait Time</h3>
+                  <span class="stat-icon">⏱️</span>
+                </div>
+                <p class="stat-value">8.5 min</p>
+                <p class="stat-change negative">↑ 2.5 min from target</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UUM Transit - Routes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/routes.css" />
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <header class="header">
+        <div class="container">
+          <div class="brand">
+            <span class="brand-icon">🚌</span>
+            <h1 class="brand-name">UUM Transit</h1>
+          </div>
+          <nav class="nav">
+            <a href="/" class="nav-link">Dashboard</a>
+            <a href="/routes.html" class="nav-link active">Routes</a>
+            <a href="/schedule.html" class="nav-link">Schedule</a>
+            <a href="/driver.html" class="nav-link">Driver</a>
+            <a href="/admin.html" class="nav-link">Admin</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container section">
+        <div class="routes-header">
+          <h1 class="page-title">Bus Routes</h1>
+          <div class="route-filters">
+            <button class="filter-btn active">All Routes</button>
+            <button class="filter-btn">Main Campus</button>
+            <button class="filter-btn">Residential</button>
+          </div>
+        </div>
+
+        <div class="routes-grid-detailed">
+          <!-- Main Campus Route -->
+          <div class="route-card-detailed">
+            <div class="route-header">
+              <div class="route-title">
+                <h3>Main Campus Loop</h3>
+                <span class="route-status active">Active</span>
+              </div>
+              <div class="route-meta">
+                <span class="route-info-badge">
+                  <span class="info-icon">⏱️</span>
+                  15 min frequency
+                </span>
+                <span class="route-info-badge">
+                  <span class="info-icon">🚶</span>
+                  8 stops
+                </span>
+              </div>
+            </div>
+
+            <div class="route-timeline">
+              <div class="timeline-stop">
+                <span class="stop-dot"></span>
+                <div class="stop-info">
+                  <h4>DKG 1</h4>
+                  <p>First pickup point</p>
+                </div>
+              </div>
+              <div class="timeline-stop">
+                <span class="stop-dot"></span>
+                <div class="stop-info">
+                  <h4>DKG 5</h4>
+                  <p>Main academic area</p>
+                </div>
+              </div>
+              <div class="timeline-stop">
+                <span class="stop-dot"></span>
+                <div class="stop-info">
+                  <h4>Library</h4>
+                  <p>Central library complex</p>
+                </div>
+              </div>
+              <div class="timeline-stop">
+                <span class="stop-dot"></span>
+                <div class="stop-info">
+                  <h4>Student Center</h4>
+                  <p>Student activities hub</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Residential Route -->
+          <div class="route-card-detailed">
+            <div class="route-header">
+              <div class="route-title">
+                <h3>Residential College Route</h3>
+                <span class="route-status active">Active</span>
+              </div>
+              <div class="route-meta">
+                <span class="route-info-badge">
+                  <span class="info-icon">⏱️</span>
+                  20 min frequency
+                </span>
+                <span class="route-info-badge">
+                  <span class="info-icon">🚶</span>
+                  6 stops
+                </span>
+              </div>
+            </div>
+
+            <div class="route-timeline">
+              <div class="timeline-stop">
+                <span class="stop-dot"></span>
+                <div class="stop-info">
+                  <h4>MAS Hall</h4>
+                  <p>Student residential area</p>
+                </div>
+              </div>
+              <div class="timeline-stop">
+                <span class="stop-dot"></span>
+                <div class="stop-info">
+                  <h4>TNB Hall</h4>
+                  <p>Student residential area</p>
+                </div>
+              </div>
+              <div class="timeline-stop">
+                <span class="stop-dot"></span>
+                <div class="stop-info">
+                  <h4>Sports Centre</h4>
+                  <p>Sports and recreation</p>
+                </div>
+              </div>
+              <div class="timeline-stop">
+                <span class="stop-dot"></span>
+                <div class="stop-info">
+                  <h4>Varsity Mall</h4>
+                  <p>Shopping and dining</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

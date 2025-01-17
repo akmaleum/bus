@@ -1,0 +1,152 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+/* Apply fade-in animation to sections */
+section {
+    animation: fadeIn 0.8s ease-out;
+    
+}
+
+/* Header styles */
+header {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 50px;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.nav-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    font-family: "Inter", serif;
+}
+
+.nav-btn:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+
+/* Main content styles */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+section {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.info-card {
+    line-height: 25px;
+}
+
+.location-card {
+    line-height: 25px;
+}
+
+/* Routes styles */
+.route-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.stops-list {
+    list-style: none;
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.stops-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.stops-list-columns {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stops-list li::before {
+    content: "•";
+    color: #3b82f6;
+    position: absolute;
+    left: 0.5rem;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .notifications {
+        grid-column: span 2;
+    }
+}
+
+/* Fade-in animation for sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

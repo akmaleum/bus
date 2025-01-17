@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UUM Transportation App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="min-h-screen"><!DOCTYPE html>
+      <header class="header">
+        <div class="container">
+          <div class="brand">
+            <span class="brand-icon">🚌</span>
+            <h1 class="brand-name">UUM Transit</h1>
+          </div>
+          <nav class="nav">
+            <a href="/index.html" class="nav-link active">Dashboard</a>
+            <a href="/routes.html" class="nav-link">Routes</a>
+            <a href="/schedule.html" class="nav-link">Schedule</a>
+            <a href="/driver.html" class="nav-link">Driver</a>
+            <a href="/admin.html" class="nav-link">Admin</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container section">
+        <div class="dashboard-grid">
+          <!-- Active Buses -->
+          <div class="stat-card">
+            <div class="stat-card-header">
+              <h3 class="stat-card-title">Active Buses</h3>
+              <span class="status-badge success">Online</span>
+            </div>
+            <p class="stat-card-value">5</p>
+            <p class="stat-card-subtitle">Out of 6 total buses</p>
+          </div>
+
+          <!-- Current Passengers -->
+          <div class="stat-card">
+            <div class="stat-card-header">
+              <h3 class="stat-card-title">Current Passengers</h3>
+              <span class="status-badge warning">Peak Hours</span>
+            </div>
+            <p class="stat-card-value">127</p>
+            <p class="stat-card-subtitle">Across all routes</p>
+          </div>
+
+          <!-- Average Wait Time -->
+          <div class="stat-card">
+            <div class="stat-card-header">
+              <h3 class="stat-card-title">Average Wait Time</h3>
+              <span class="status-badge success">Normal</span>
+            </div>
+            <p class="stat-card-value">8 min</p>
+            <p class="stat-card-subtitle">Last hour average</p>
+          </div>
+        </div>
+
+        <div class="routes-section">
+          <h2 class="section-title">Active Routes</h2>
+          <div class="routes-grid">
+            <div class="route-card">
+              <div class="route-header">
+                <h3>Main Campus Loop</h3>
+                <span class="route-status active">Active</span>
+              </div>
+              <ul class="route-stops">
+                <li>DKG 1</li>
+                <li>DKG 5</li>
+                <li>Library</li>
+                <li>Student Center</li>
+              </ul>
+              <div class="route-info">
+                <span>Next bus: 5 mins</span>
+                <span>Frequency: 15 mins</span>
+              </div>
+            </div>
+
+            <div class="route-card">
+              <div class="route-header">
+                <h3>Residential College Route</h3>
+                <span class="route-status active">Active</span>
+              </div>
+              <ul class="route-stops">
+                <li>MAS Hall</li>
+                <li>TNB Hall</li>
+                <li>Sports Centre</li>
+                <li>Varsity Mall</li>
+              </ul>
+              <div class="route-info">
+                <span>Next bus: 3 mins</span>
+                <span>Frequency: 20 mins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-section">
+          <h2 class="section-title">Live Updates</h2>
+          <div class="activity-feed">
+            <div class="activity-item">
+              <div class="activity-icon">🚌</div>
+              <div class="activity-content">
+                <p class="activity-text">Bus 102 arrived at DKG 5</p>
+                <p class="activity-time">2 minutes ago</p>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon">⏰</div>
+              <div class="activity-content">
+                <p class="activity-text">Route A delay: 5 minutes</p>
+                <p class="activity-time">5 minutes ago</p>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon">📍</div>
+              <div class="activity-content">
+                <p class="activity-text">New stop added: Academic Complex</p>
+                <p class="activity-time">15 minutes ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
